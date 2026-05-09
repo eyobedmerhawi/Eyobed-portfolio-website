@@ -79,7 +79,7 @@ def local_css(file_name):
 local_css("style/style.css")
 
 lottie_coding = load_lottieurl("https://lottie.host/bbc0ee2a-46be-4a1b-a615-22825e5c6f31/MsEHbGepxu.json")
-img_resume = Image.open("Images/Resume.png")
+img_resume = Image.open("Images/My_resume.png")
 img_certificate = Image.open("Images/Wells_Fargo_Certificate.png")
 
 #Header
@@ -137,6 +137,50 @@ with st.container():
 - Implemented the ERD using IntelliJ  
 - Published the final implementation to GitHub  
 """)
+
+# =========================
+# PROJECTS SECTION
+# =========================
+st.write("---")
+st.subheader("Projects")
+
+project1, project2 = st.columns(2)
+
+with project1:
+    st.markdown("""
+### [👨‍💼 Employee Data Management System](https://github.com/eyobedmerhawi/Employee-Data-Management-System)
+
+- Built a lightweight Java-based employee management system
+- Managed employee records, salary updates, and HR reporting
+- Used a modular architecture with MySQL database integration
+- Focused on backend organization and database operations
+""")
+
+    st.markdown("""
+    ### [🛡️ Splunk SIEM Capstone](https://github.com/eyobedmerhawi)
+
+    - Investigated phishing datasets using Splunk
+    - Analyzed suspicious sender behavior and URLs
+    - Used VirusTotal and MITRE ATT&CK methodologies
+    - Created incident response playbooks
+    """)
+
+with project2:
+    st.markdown("""
+    ### [⚙️ OS Thread Synchronization](https://github.com/eyobedmerhawi/Os-thread-synchronization)
+
+    - Built producer-consumer simulations using pthreads and semaphores
+    - Implemented multithreading in C
+    - Simulated CPU burst execution and synchronization
+    """)
+
+    st.markdown("""
+    ### [💻 RISC-V Assembly Labs](https://github.com/eyobedmerhawi)
+
+    - Developed low-level programs in RARS
+    - Worked with arrays, strings, RNG systems, and memory operations
+    - Practiced computer architecture and assembly programming
+    """)
 
 # Contact info
 with st.container():
